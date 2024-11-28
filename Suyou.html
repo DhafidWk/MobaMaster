@@ -23,10 +23,10 @@
 
         <div class="isimenu">
             <ul class="menu">
-                <li> <a href="home.html" target="_parent">Home</a></li>
+                <li> <a href="index.html" target="_parent">Home</a></li>
                 <li> <a href="news.html" target="_parent">News</a></li>
                 <li> <a href="hero.html" target="_parent">Hero</a></li>
-                <li> <a href="DOWNLEGENDS/index.html" target="_parent" onclick="return confirmNavigation(event)">Download</a></li>
+                <li> <a href="https://adriyanp.github.io/DownLegends/" target="_parent" onclick="return confirmNavigation(event)">Download</a></li>
                 <li> <a href="about.html" target="_parent">About</a></li>
             </ul>
         </div>
@@ -149,7 +149,13 @@
                 </p>
         </div>
         <script src="script.js"></script>
-        
+        <script>
+            function searchArticles() {
+        let searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        window.location.href = `index.html?search=${searchTerm}`; // Arahkan ke index.html dengan query search
+        }
+    
+        </script>
 
     
     
